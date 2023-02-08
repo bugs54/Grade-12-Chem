@@ -31,23 +31,30 @@ def getForm():
 def calc(formula):
   totalMass = 0
   mass = 0
-  inSub = False
-  sub = ""
+  depth = 0
+  sub = []
   
   for i in formula:
 
-    if type(i) == int:
-      mass *= i
-    elif i == "(":
+    if i == "(":
       totalMass += mass
       mass = 0
-      inSub = True
-      sub = ""
-    else:
+      depth += 1
+    elif i == ")":
+      depth -= 1
+    elif type(i) == int and depth == 0:
+      mass *= i
+    elif depth == 0:
       totalMass += mass
       mass = 0
       mass = PT[i]["ATOMIC MASS"]
     
+    if depth != 0:
+      sub.append(i)
+    elif sub != []:
+      sub.pop(0)
+      mass = calc(sub)
+      sub = []
       
   totalMass += mass
   return totalMass
