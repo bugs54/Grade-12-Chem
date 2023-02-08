@@ -1,0 +1,34 @@
+{
+  "H": {
+    "ATOMIC MASS": 1.0079,
+    "ATMOIC NUMBER": 1,
+    "NAME": "Hydrogen",
+    "CHARGE": [1,-1],
+    "METAL": false,
+    "EN": 2.20
+  },
+  "He": {
+    "ATOMIC MASS": 4.0026,
+    "ATMOIC NUMBER": 2,
+    "NAME": "Helium",
+    "CHARGE": [],
+    "METAL": false,
+    "EN": null
+  },
+  "Li": {
+    "ATOMIC MASS": 6.941,
+    "ATMOIC NUMBER": 3,
+    "NAME": "Lithium",
+    "CHARGE": [1],
+    "METAL": true,
+    "EN": 0.98
+  },
+  "Be": {
+    "ATOMIC MASS": 9.0122,
+    "ATMOIC NUMBER": 4,
+    "NAME": "Beryllium",
+    "CHARGE": [2],
+    "METAL": true,
+    "EN": 1.57
+  }
+}
