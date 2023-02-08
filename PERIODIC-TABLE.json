@@ -5,7 +5,8 @@
     "NAME": "Hydrogen",
     "CHARGE": [1,-1],
     "METAL": false,
-    "EN": 2.20
+    "EN": 2.20,
+    "VALENCE": [1]
   },
   "He": {
     "ATOMIC MASS": 4.0026,
@@ -13,7 +14,8 @@
     "NAME": "Helium",
     "CHARGE": [],
     "METAL": false,
-    "EN": null
+    "EN": null,
+    "VALENCE": [2]
   },
   "Li": {
     "ATOMIC MASS": 6.941,
@@ -21,7 +23,8 @@
     "NAME": "Lithium",
     "CHARGE": [1],
     "METAL": true,
-    "EN": 0.98
+    "EN": 0.98,
+    "VALENCE": [2,1]
   },
   "Be": {
     "ATOMIC MASS": 9.0122,
@@ -29,6 +32,54 @@
     "NAME": "Beryllium",
     "CHARGE": [2],
     "METAL": true,
-    "EN": 1.57
+    "EN": 1.57,
+    "VALENCE": [2,2]
+  },
+  "Al": {
+    "ATOMIC MASS": 26.982,
+    "ATMOIC NUMBER": 13,
+    "NAME": "Aluminium",
+    "CHARGE": [3],
+    "METAL": true,
+    "EN": 1.61,
+    "VALENCE": [2,8,3]
+  }
+  ,
+  "Cr": {
+    "ATOMIC MASS": 51.996,
+    "ATMOIC NUMBER": 24,
+    "NAME": "Chromium",
+    "CHARGE": [2,3,6],
+    "METAL": true,
+    "EN": 1.66,
+    "VALENCE": [2,8,13,1]
+  }
+  ,
+  "O": {
+    "ATOMIC MASS": 15.999,
+    "ATMOIC NUMBER": 8,
+    "NAME": "Oxygen",
+    "CHARGE": [-2],
+    "METAL": false,
+    "EN": 3.44,
+    "VALENCE": [2,6]
+  },
+  "Cd": {
+    "ATOMIC MASS": 112.41,
+    "ATMOIC NUMBER": 48,
+    "NAME": "Cadmium",
+    "CHARGE": [2],
+    "METAL": true,
+    "EN": 1.69,
+    "VALENCE": [2,8,18,18,2]
+  },
+  "Cl": {
+    "ATOMIC MASS": 35.453,
+    "ATMOIC NUMBER": 17,
+    "NAME": "Chlorine",
+    "CHARGE": [-1,1,3,5,7],
+    "METAL": false,
+    "EN": 3.16,
+    "VALENCE": [2,8,7]
   }
 }

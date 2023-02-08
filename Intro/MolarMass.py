@@ -1,9 +1,3 @@
-# import the periodic table
-import json
-
-PT = open("PERIODIC-TABLE.json")
-PT = json.load(PT)
-
 # convert the formula into something that can be used by the program
 def getForm():
   formula = input("What's the formula: ")
@@ -65,4 +59,11 @@ def main():
   mass = calc(formula)
   print(mass)
 
-main()
+if __name__ == "__main__":
+  # import the periodic table
+  import json
+
+  PT = open("PERIODIC-TABLE.json")
+  PT = json.load(PT)
+  
+  main()
