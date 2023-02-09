@@ -81,5 +81,23 @@
     "METAL": false,
     "EN": 3.16,
     "VALENCE": [2,8,7]
+  },
+  "Na": {
+    "ATOMIC MASS": 22.990,
+    "ATMOIC NUMBER": 11,
+    "NAME": "Sodium",
+    "CHARGE": [1],
+    "METAL": true,
+    "EN": 0.93,
+    "VALENCE": [2,8,1]
+  },
+  "C": {
+    "ATOMIC MASS": 12.011,
+    "ATMOIC NUMBER": 6,
+    "NAME": "Carbon",
+    "CHARGE": [-4,2,4],
+    "METAL": false,
+    "EN": 2.55,
+    "VALENCE": [2,4]
   }
 }

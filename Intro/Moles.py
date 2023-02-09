@@ -1,12 +1,12 @@
 import MolarMass
 
-AVO = 6.02 * 10^23
+AVO = 6.02 * 10**23
 
 def molesToAtoms(moles):
   return moles * AVO
 
 def molesToWeight(moles, formula):
-  M = MolarMass.getForm(formula)
+  formula = MolarMass.getForm(formula)
   M = MolarMass.calc(formula)
 
   return moles * M
@@ -23,13 +23,16 @@ def weightToAtoms(weight, formula):
   return molesToAtoms(n)
 
 def weightToMoles(weight, formula):
-  M = MolarMass.getForm(formula)
+
+  formula = MolarMass.getForm(formula)
   M = MolarMass.calc(formula)
 
   return weight/M
 
 def main():
-  pass
+  atoms = 5.67*10**23
+  form = input("formula: ")
+  print(atomsToWeight(atoms, form))
 
 if __name__ == "__main__":
   # import the periodic table

@@ -1,6 +1,11 @@
+# import the periodic table
+import json
+
+PT = open("PERIODIC-TABLE.json")
+PT = json.load(PT)
+
 # convert the formula into something that can be used by the program
-def getForm():
-  formula = input("What's the formula: ")
+def getForm(formula):
   formula = formula.replace(" ", "")
   
   new = ""
@@ -27,17 +32,25 @@ def calc(formula):
   mass = 0
   depth = 0
   sub = []
-  
+  last = ""
+
   for i in formula:
 
     if i == "(":
       totalMass += mass
       mass = 0
       depth += 1
+
     elif i == ")":
       depth -= 1
+
     elif type(i) == int and depth == 0:
-      mass *= i
+      if type(last) == int:
+        mass = mass/last
+        mass *= int(str(last)+str(i))
+      else:
+        mass *= i
+
     elif depth == 0:
       totalMass += mass
       mass = 0
@@ -49,21 +62,18 @@ def calc(formula):
       sub.pop(0)
       mass = calc(sub)
       sub = []
+    
+    last = i
       
   totalMass += mass
   return totalMass
   
   
 def main():
-  formula = getForm()
+  formula = getForm(input("formula: "))
   mass = calc(formula)
   print(mass)
 
 if __name__ == "__main__":
-  # import the periodic table
-  import json
 
-  PT = open("PERIODIC-TABLE.json")
-  PT = json.load(PT)
-  
   main()
